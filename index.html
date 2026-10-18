@@ -1,0 +1,1126 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Udhab Dahal | Legal Professional</title>
+
+  <meta name="description" content="Professional profile of Udhab Dahal, lawyer, management expert and professional liquidator in Nepal.">
+
+  <style>
+    :root {
+      --green: #123d30;
+      --green-light: #1c5943;
+      --gold: #c8a45d;
+      --cream: #f8f5ed;
+      --white: #ffffff;
+      --text: #26342d;
+      --muted: #68756d;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+      background: var(--white);
+      line-height: 1.7;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .container {
+      width: min(1120px, 90%);
+      margin: auto;
+    }
+
+    /* Navigation */
+
+    header {
+      background: var(--green);
+      color: var(--white);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 3px 12px rgba(0, 0, 0, 0.12);
+    }
+
+    nav {
+      min-height: 76px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .logo {
+      color: var(--gold);
+      font-size: 1.35rem;
+      font-weight: bold;
+      letter-spacing: 0.5px;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      font-size: 0.92rem;
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover {
+      color: var(--gold);
+    }
+
+    .menu-toggle {
+      display: none;
+      background: none;
+      color: var(--white);
+      border: 1px solid var(--gold);
+      padding: 7px 12px;
+      font-size: 1.2rem;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    /* Hero */
+
+    .hero {
+      background:
+        radial-gradient(
+          circle at top right,
+          rgba(200, 164, 93, 0.14),
+          transparent 35%
+        ),
+        var(--green);
+      color: var(--white);
+      padding: 110px 0;
+    }
+
+    .hero-content {
+      max-width: 850px;
+    }
+
+    .eyebrow {
+      color: var(--gold);
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-size: 0.85rem;
+      font-weight: bold;
+      margin-bottom: 18px;
+    }
+
+    .hero h1 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(2.5rem, 6vw, 4.7rem);
+      line-height: 1.15;
+      margin-bottom: 22px;
+    }
+
+    .hero h1 span {
+      color: var(--gold);
+    }
+
+    .hero-description {
+      max-width: 720px;
+      font-size: 1.08rem;
+      color: #e4e9e4;
+      margin-bottom: 30px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 12px 24px;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: 0.2s;
+    }
+
+    .button-primary {
+      background: var(--gold);
+      color: var(--green);
+    }
+
+    .button-primary:hover {
+      background: #e0c27e;
+      transform: translateY(-2px);
+    }
+
+    .button-outline {
+      border: 1px solid var(--gold);
+      color: var(--white);
+    }
+
+    .button-outline:hover {
+      background: var(--gold);
+      color: var(--green);
+    }
+
+    /* General sections */
+
+    section {
+      padding: 85px 0;
+      scroll-margin-top: 76px;
+    }
+
+    .section-heading {
+      text-align: center;
+      max-width: 720px;
+      margin: 0 auto 45px;
+    }
+
+    .section-label {
+      color: var(--green-light);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 0.8rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .section-heading h2 {
+      font-family: Georgia, "Times New Roman", serif;
+      color: var(--green);
+      font-size: clamp(2rem, 4vw, 2.8rem);
+      line-height: 1.25;
+      margin-bottom: 15px;
+    }
+
+    .section-heading p {
+      color: var(--muted);
+    }
+
+    /* About Us */
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 45px;
+      align-items: start;
+    }
+
+    .about-text h3 {
+      color: var(--green);
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+    }
+
+    .about-text p {
+      margin-bottom: 16px;
+    }
+
+    .values-card {
+      background: var(--cream);
+      border-left: 4px solid var(--gold);
+      padding: 28px;
+      border-radius: 5px;
+    }
+
+    .values-card h3 {
+      color: var(--green);
+      margin-bottom: 18px;
+    }
+
+    .value-item {
+      margin-bottom: 18px;
+    }
+
+    .value-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .value-item h4 {
+      color: var(--green-light);
+      margin-bottom: 4px;
+    }
+
+    .value-item p {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .contact-detail {
+      margin-bottom: 20px;
+    }
+
+    .contact-detail strong {
+      display: block;
+      color: var(--green);
+      margin-bottom: 4px;
+    }
+
+    .contact-detail a {
+      color: var(--green-light);
+      overflow-wrap: anywhere;
+    }
+
+    .contact-detail a:hover {
+      text-decoration: underline;
+    }
+
+    /* Achievement statistics */
+
+    .stats {
+      background: var(--green);
+      color: var(--white);
+      padding: 55px 0;
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 25px;
+      text-align: center;
+    }
+
+    .stat-number {
+      display: block;
+      color: var(--gold);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .stat-label {
+      font-size: 0.92rem;
+      color: #e0e7e1;
+    }
+
+    /* Services */
+
+    .services {
+      background: var(--cream);
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+
+    .service-card {
+      background: var(--white);
+      padding: 30px;
+      border-radius: 8px;
+      border: 1px solid #e8e4d9;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(18, 61, 48, 0.09);
+    }
+
+    .service-number {
+      color: var(--gold);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 12px;
+    }
+
+    .service-card h3 {
+      color: var(--green);
+      font-size: 1.3rem;
+      margin-bottom: 10px;
+    }
+
+    .service-card p {
+      color: var(--muted);
+    }
+
+    /* Qualifications */
+
+    .qualifications-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .qualification-card {
+      padding: 25px;
+      border: 1px solid #e4e7e2;
+      border-radius: 7px;
+      background: var(--white);
+    }
+
+    .qualification-card h3 {
+      color: var(--green);
+      margin-bottom: 10px;
+    }
+
+    .qualification-card p {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    /* Experience */
+
+    .experience {
+      background: var(--cream);
+    }
+
+    .experience-content {
+      max-width: 850px;
+      margin: auto;
+    }
+
+    .experience-item {
+      padding: 0 0 28px 25px;
+      margin-left: 8px;
+      border-left: 2px solid var(--gold);
+      position: relative;
+    }
+
+    .experience-item:last-child {
+      padding-bottom: 0;
+    }
+
+    .experience-item::before {
+      content: "";
+      width: 12px;
+      height: 12px;
+      background: var(--green-light);
+      border: 3px solid var(--cream);
+      border-radius: 50%;
+      position: absolute;
+      left: -8px;
+      top: 5px;
+    }
+
+    .experience-item h3 {
+      color: var(--green);
+      margin-bottom: 7px;
+    }
+
+    .experience-item p {
+      color: var(--muted);
+    }
+
+    /* Research */
+
+    .research-box {
+      background: var(--green);
+      color: var(--white);
+      padding: 42px;
+      border-radius: 8px;
+      text-align: center;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .research-box h3 {
+      color: var(--gold);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 1.8rem;
+      margin-bottom: 15px;
+    }
+
+    .research-box p {
+      color: #e3e9e4;
+    }
+
+    /* Contact */
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: start;
+    }
+
+    .contact-info h3 {
+      color: var(--green);
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+    }
+
+    .contact-info > p {
+      color: var(--muted);
+      margin-bottom: 24px;
+    }
+
+    .contact-note {
+      background: var(--cream);
+      padding: 28px;
+      border-radius: 7px;
+      border-top: 4px solid var(--gold);
+    }
+
+    .contact-note h3 {
+      color: var(--green);
+      margin-bottom: 12px;
+    }
+
+    .contact-note p {
+      color: var(--muted);
+      margin-bottom: 20px;
+    }
+
+    /* Footer */
+
+    footer {
+      background: #0b2c22;
+      color: #e3e9e4;
+      padding: 30px 0;
+      text-align: center;
+    }
+
+    footer .footer-name {
+      color: var(--gold);
+      font-size: 1.15rem;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+
+    footer p {
+      font-size: 0.9rem;
+      margin-bottom: 6px;
+    }
+
+    .footer-social {
+      display: inline-block;
+      color: var(--gold);
+      margin-top: 8px;
+    }
+
+    /* Mobile responsive design */
+
+    @media (max-width: 800px) {
+      .menu-toggle {
+        display: block;
+      }
+
+      .nav-links {
+        display: none;
+        position: absolute;
+        top: 76px;
+        left: 0;
+        right: 0;
+        background: var(--green);
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        padding: 10px 5% 20px;
+      }
+
+      .nav-links.open {
+        display: flex;
+      }
+
+      .nav-links a {
+        display: block;
+        padding: 12px 0;
+      }
+
+      .about-grid,
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .qualifications-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 30px;
+      }
+    }
+
+    @media (max-width: 560px) {
+      .hero {
+        padding: 80px 0;
+      }
+
+      section {
+        padding: 65px 0;
+      }
+
+      .services-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-buttons {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .button {
+        text-align: center;
+      }
+
+      .research-box {
+        padding: 28px 22px;
+      }
+
+      .logo {
+        font-size: 1.1rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <header>
+    <nav class="container">
+      <a class="logo" href="#home">UDHAB DAHAL</a>
+
+      <button
+        class="menu-toggle"
+        id="menuToggle"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+        aria-controls="navLinks"
+      >
+        ☰
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#qualifications">Qualifications</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    
+    <!-- Home / Hero -->
+    <section class="hero" id="home">
+      <div class="container">
+        <div class="hero-content">
+          <p class="eyebrow">Law • Business • Management</p>
+
+          <h1>Udhab <span>Dahal</span></h1>
+
+          <p class="hero-description">
+            Lawyer, management expert and professional liquidator
+            with over 12 years of experience in legal consultation,
+            business formation, liquidation and legal research in Nepal.
+          </p>
+
+          <div class="hero-buttons">
+            <a class="button button-primary" href="#services">
+              Explore My Services
+            </a>
+
+            <a class="button button-outline" href="#contact">
+              Contact Me
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Us -->
+    <section id="about">
+      <div class="container">
+
+        <div class="section-heading">
+          <p class="section-label">About Us</p>
+          <h2>Legal Knowledge. Practical Solutions.</h2>
+          <p>
+            Supporting individuals, businesses and organizations
+            through legal guidance and professional expertise.
+          </p>
+        </div>
+
+        <div class="about-grid">
+
+          <div class="about-text">
+            <h3>Professional Profile</h3>
+
+            <p>
+              Udhab Dahal is a legal professional and management
+              expert based in Kathmandu, Nepal. With more than
+              12 years of experience, his work focuses on legal
+              consultation, business formation, liquidation and
+              organizational management.
+            </p>
+
+            <p>
+              His professional interests include civil and criminal
+              law, corporate legal matters, cooperative organizations,
+              and the legal and management challenges faced by
+              businesses and institutions.
+            </p>
+
+            <p>
+              He has handled more than 1,000 cases and has experience
+              providing legal advisory services to cooperatives.
+              His professional experience also includes involvement
+              in more than 10 public interest litigation (PIL) cases
+              in the Supreme Court and work associated with the
+              High Court in Patan.
+            </p>
+
+            <p>
+              As a lawyer and management expert, he works in areas
+              including business formation, liquidation, and legal
+              matters concerning NGOs and INGOs.
+            </p>
+
+            <p>
+              He holds an LLB and an MBS degree and has professional
+              qualifications in liquidation. He has also published
+              research papers related to cooperatives and business
+              management.
+            </p>
+
+            <p>
+              His goal is to provide clear, responsible and practical
+              legal support while maintaining transparency,
+              professionalism and high ethical standards.
+            </p>
+
+            <!-- Mobile Number -->
+            <div class="contact-detail">
+              <strong>Mobile Number</strong>
+              <a href="tel:+9779851089092">
+                +977 9851089092
+              </a>
+            </div>
+
+            <!-- Location -->
+            <div class="contact-detail">
+              <strong>Location</strong>
+              <p>Maitighar Mandala, Kathmandu, Nepal</p>
+            </div>
+
+            <!-- Email -->
+            <div class="contact-detail">
+              <strong>Email Address</strong>
+              <a href="mailto:advocateudhabdahal@gmail.com">
+                advocateudhabdahal@gmail.com
+              </a>
+            </div>
+
+            <!-- Facebook -->
+            <div class="contact-detail">
+              <strong>Facebook</strong>
+              <a
+                href="https://www.facebook.com/share/1BpZKhUS48/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Visit Facebook Profile
+              </a>
+            </div>
+          </div>
+
+          <!-- Core Values -->
+          <div class="values-card">
+            <h3>Core Values</h3>
+
+            <div class="value-item">
+              <h4>01. Transparent</h4>
+              <p>
+                Believing in clear communication, honesty,
+                accountability and professional responsibility.
+                Every client deserves clarity and respect.
+              </p>
+            </div>
+
+            <div class="value-item">
+              <h4>02. Collaborative</h4>
+              <p>
+                Working with clients, businesses and organizations
+                to understand their needs, build trust and identify
+                suitable legal and management solutions.
+              </p>
+            </div>
+
+            <div class="value-item">
+              <h4>03. Ambitious</h4>
+              <p>
+                Committed to continuous learning, professional
+                growth and meaningful contributions to the legal
+                field and business community.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Achievements -->
+    <section class="stats" aria-label="Professional achievements">
+      <div class="container">
+        <div class="stats-grid">
+
+          <div>
+            <span class="stat-number">12+</span>
+            <p class="stat-label">Years of Experience</p>
+          </div>
+
+          <div>
+            <span class="stat-number">1000+</span>
+            <p class="stat-label">Cases Handled</p>
+          </div>
+
+          <div>
+            <span class="stat-number">10+</span>
+            <p class="stat-label">Supreme Court PIL Cases</p>
+          </div>
+
+          <div>
+            <span class="stat-number">3</span>
+            <p class="stat-label">Core Professional Values</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services" id="services">
+      <div class="container">
+
+        <div class="section-heading">
+          <p class="section-label">What I Do</p>
+          <h2>Professional Services</h2>
+          <p>
+            Legal and management services for individuals,
+            businesses, cooperatives and organizations.
+          </p>
+        </div>
+
+        <div class="services-grid">
+
+          <article class="service-card">
+            <div class="service-number">01</div>
+            <h3>Legal Consultation</h3>
+            <p>
+              Legal guidance on relevant civil, criminal and
+              corporate matters, based on the circumstances
+              of each case.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-number">02</div>
+            <h3>Business Registration</h3>
+            <p>
+              Assistance with business formation, registration
+              procedures and related legal documentation.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-number">03</div>
+            <h3>Liquidation Services</h3>
+            <p>
+              Professional support for business and organizational
+              liquidation processes, subject to applicable laws
+              and procedures.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-number">04</div>
+            <h3>Legal Research</h3>
+            <p>
+              Legal research, analysis and documentation,
+              including research relating to cooperatives
+              and business management.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Qualifications -->
+    <section id="qualifications">
+      <div class="container">
+
+        <div class="section-heading">
+          <p class="section-label">Education & Expertise</p>
+          <h2>Qualifications</h2>
+          <p>
+            Academic and professional credentials supporting
+            legal practice and management work.
+          </p>
+        </div>
+
+        <div class="qualifications-grid">
+
+          <article class="qualification-card">
+            <h3>LLB</h3>
+            <p>
+              Legal education supporting the understanding
+              and application of law and legal procedures.
+            </p>
+          </article>
+
+          <article class="qualification-card">
+            <h3>MBS</h3>
+            <p>
+              Management studies supporting business understanding,
+              organizational planning and administration.
+            </p>
+          </article>
+
+          <article class="qualification-card">
+            <h3>Professional Liquidator</h3>
+            <p>
+              Professional expertise in liquidation-related work
+              and organizational closure procedures.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="experience" id="experience">
+      <div class="container">
+
+        <div class="section-heading">
+          <p class="section-label">Professional Background</p>
+          <h2>Experience & Achievements</h2>
+          <p>
+            Areas of professional work and contributions
+            across the legal and management sectors.
+          </p>
+        </div>
+
+        <div class="experience-content">
+
+          <div class="experience-item">
+            <h3>Legal Practice</h3>
+            <p>
+              More than 12 years of professional experience,
+              with over 1,000 cases handled.
+            </p>
+          </div>
+
+          <div class="experience-item">
+            <h3>Cooperative Legal Advisory</h3>
+            <p>
+              Experience providing legal advisory support
+              to cooperative organizations.
+            </p>
+          </div>
+
+          <div class="experience-item">
+            <h3>Public Interest Litigation</h3>
+            <p>
+              Involvement in more than 10 public interest
+              litigation (PIL) cases in the Supreme Court.
+            </p>
+          </div>
+
+          <div class="experience-item">
+            <h3>High Court Involvement</h3>
+            <p>
+              Professional involvement associated with
+              the High Court in Patan.
+            </p>
+          </div>
+
+          <div class="experience-item">
+            <h3>Business & Organizational Management</h3>
+            <p>
+              Work involving business formation, liquidation
+              and legal matters concerning NGOs and INGOs.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Research and Publications -->
+    <section id="research">
+      <div class="container">
+        <div class="research-box">
+          <h3>Research & Publications</h3>
+          <p>
+            Research interests include cooperatives, business
+            management and related legal issues. Published
+            research papers contribute to professional learning
+            and discussion in these fields.
+          </p>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Contact -->
+    <section id="contact">
+      <div class="container">
+
+        <div class="section-heading">
+          <p class="section-label">Get in Touch</p>
+          <h2>Contact Udhab Dahal</h2>
+          <p>
+            For inquiries regarding legal consultation,
+            business registration, liquidation or legal research.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+
+          <div class="contact-info">
+            <h3>Contact Information</h3>
+
+            <p>
+              Please use the following contact details
+              to make a professional inquiry.
+            </p>
+
+            <div class="contact-detail">
+              <strong>Mobile Number</strong>
+              <a href="tel:+9779851089092">
+                +977 9851089092
+              </a>
+            </div>
+
+            <div class="contact-detail">
+              <strong>Email</strong>
+              <a href="mailto:advocateudhabdahal@gmail.com">
+                advocateudhabdahal@gmail.com
+              </a>
+            </div>
+
+            <div class="contact-detail">
+              <strong>Location</strong>
+              <p>Maitighar Mandala, Kathmandu, Nepal</p>
+            </div>
+
+            <div class="contact-detail">
+              <strong>Facebook</strong>
+              <a
+                href="https://www.facebook.com/share/1BpZKhUS48/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Visit Facebook Profile
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-note">
+            <h3>How Can I Help You?</h3>
+
+            <p>
+              Send an email describing your inquiry.
+              Include relevant details so your request
+              can be understood more clearly.
+            </p>
+
+            <a
+              class="button button-primary"
+              href="mailto:advocateudhabdahal@gmail.com?subject=Legal%20Service%20Inquiry"
+            >
+              Send an Email
+            </a>
+
+            <br><br>
+
+            <a
+              class="button button-primary"
+              href="tel:+9779851089092"
+            >
+              Call Now
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p class="footer-name">Udhab Dahal</p>
+
+      <p>
+        Lawyer | Management Expert | Professional Liquidator
+      </p>
+
+      <p>Maitighar Mandala, Kathmandu, Nepal</p>
+
+      <a
+        class="footer-social"
+        href="https://www.facebook.com/share/1BpZKhUS48/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Facebook Profile
+      </a>
+
+      <p style="margin-top: 18px;">
+        © <span id="currentYear"></span> Udhab Dahal.
+        All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    // Mobile navigation menu
+    const menuToggle = document.getElementById("menuToggle");
+    const navLinks = document.getElementById("navLinks");
+
+    menuToggle.addEventListener("click", function () {
+      const isOpen = navLinks.classList.toggle("open");
+
+      menuToggle.setAttribute("aria-expanded", isOpen);
+
+      menuToggle.setAttribute(
+        "aria-label",
+        isOpen ? "Close navigation menu" : "Open navigation menu"
+      );
+
+      menuToggle.textContent = isOpen ? "✕" : "☰";
+    });
+
+    // Close the menu after selecting a section
+    document.querySelectorAll(".nav-links a").forEach(function (link) {
+      link.addEventListener("click", function () {
+        navLinks.classList.remove("open");
+        menuToggle.setAttribute("aria-expanded", "false");
+        menuToggle.setAttribute("aria-label", "Open navigation menu");
+        menuToggle.textContent = "☰";
+      });
+    });
+
+    // Automatically update the copyright year
+    document.getElementById("currentYear").textContent =
+      new Date().getFullYear();
+  </script>
+
+</body>
+</html>
